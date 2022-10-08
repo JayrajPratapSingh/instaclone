@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Main_container{
+    width:100%;
+    height:100vh;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #aede00 0%, #ff5100 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Container{
+    width: 1000px;
+    height: 600px;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.Main_container .Container .image_conatiner{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px ;
+    display: flex;
+    
+}
+
+.Main_container .Container .image_conatiner img{
+    width: 130%;
+    height: 80%;
+    border-radius: 20px ;
+   
+}
+.Main_container .Container .enter_container{
+    width:50%;
+    text-align: center;
+    
+}
+
+.Main_container .Container .enter_container p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    color: #a3ff3b;
+    
+}
+.Main_container .Container .enter_container button{
+ appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  width: 330px;
+  font-size: 28px;
+}
+.Main_container .Container .enter_container button:hover{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #f79628 0%, #d8c51d 50%, #3bbb00 100%);
+    border: none;
+}
+
+@media only screen and (max-width:500px){
+    .Container{
+        width: 350px;
+        height: 400px;  
+        flex-direction: column;
+    }
+.Main_container .Container .image_conatiner{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+
+}
+.Main_container .Container .image_conatiner img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.Main_container .Container .enter_container{
+    width: 100%;
+    height: 50%;
+}
+.Main_container .Container .enter_container p{
+    font-size: 50px;
+    margin-bottom: 30px;
+   
+}
+.header{
+    padding: 0 20px;
+    background-color: #870233;
+}
+
+}

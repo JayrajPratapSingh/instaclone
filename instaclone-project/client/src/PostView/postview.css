@@ -1,0 +1,262 @@
+.header{
+    width:100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0px 80px;
+    justify-content: space-between;
+    border-bottom: 1px solid red;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+
+}
+
+.header .LOGO{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.header .LOGO img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.header .LOGO p{
+    font-size: 40px;
+    color: #006238;
+}
+.header .LOGO h5{
+    font-size: 20px;
+    padding-left: 900px;
+    color: #0093E9;
+}
+
+.header .camera_icon img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.post_section{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.post_section .post_container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid #bcb9b9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #bcb9b9;
+    margin-bottom: 20px;
+}
+
+.post_container .post_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    align-items: center;
+}
+.post_container .post_header .post_header_name .post_name{
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.post_container .post_header .post_header_name .post_location{
+    font-size: 22px;
+    color: #707070;
+}
+
+.post_container .post_header img{
+    width: 25px;
+    height: 20px;
+}
+
+.post_container .post_img_container{
+    width: 100%;
+    height: 210px;
+}
+.post_container .post_img_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.post_container .post_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+}
+.post_container .post_footer .post_base{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+}
+.post_container .post_footer .post_base .post_icons img{
+    width: 23px;
+    height: 23px;
+    margin-right: 18px;
+}
+.post_container .post_footer .post_base p{
+    color: #000000;
+    font-size: 16px;
+}
+
+.post_container .post_footer  p{
+    margin-top: -8px;
+    font-size: 16px;
+    padding-left: 2px;
+    color: #707070;
+    margin-bottom: 18px;
+}
+.post_container .post_footer  h3{
+    margin-bottom: 25px;
+    font-size: 21px;
+}
+
+.Input_container{
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.Input_container .form input{
+    font-family: inherit;
+  width: 100%;
+  height: 34px;
+  /* border: 0; */
+  border: 1px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+ 
+  background: transparent;
+  transition: border-color 0.2s;
+  border-radius: 5px;
+}
+.Input_container .form{
+    border: 1px solid #707070;
+    border-radius:10px ;
+    padding: 15px 20px;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #d8cb19 0%, #ec730f 100%);
+}
+.Input_container .form .image_path{
+    margin-bottom: 15px;
+}
+.Input_container .form .image_path input:nth-child(1){
+    height: 22px;
+    width: 80%;
+}
+.Input_container .form .image_path input:nth-child(2){
+    width: 20%;
+    color: #006238;
+    overflow: hidden;
+}
+
+
+  .Input_container .authorAndLocation{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .Input_container .authorAndLocation input{
+    width: 40%;
+  }
+  .Input_container .des{
+    width: 100%;
+  }
+
+  .Input_container button{
+    margin-top: 15px;
+    padding: 4px 15px;
+    border-radius: 10px;
+    border: solid 3px transparent;
+}
+.Input_container button:hover{
+    background-color: rgb(0, 195, 255);
+    box-shadow:none ;
+}
+
+
+@media only screen and (max-width:500px){
+    .header{
+        padding: 0 20px;
+    
+    }
+.header .LOGO img{
+    width: 30px;
+    height: 30px;
+}
+.header .LOGO p{
+    font-size: 30px;
+}
+.header .camera_icon img{
+    width: 25px;
+    height:25px
+}
+.post_section .post_container{
+    width: 350px;
+}
+.post_section .post_header{
+    padding: 6px 18px;
+
+}
+.post_container .post_header .post_header_name .post_name{
+    font-size: 24px;
+}
+.post_container .post_header .post_header_name .post_location{
+    font-size: 18px;
+}
+
+.post_container .post_header img{
+    width: 20px;
+    height: 15px;
+}
+.post_container .post_img_container{
+    height: 180px;
+}
+.post_container .post_footer{
+    padding: 0 17px;
+}
+.post_container .post_footer .post_base{
+    padding: 5px;
+}
+.post_container .post_footer .post_base .post_icons img{
+    width: 18px;
+    height: 17px;
+}
+.post_container .post_footer .post_base p{
+    padding-top: 10px;
+}
+.post_container .post_footer  p{
+    font-size: 14px;
+    margin-top: -9px;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+.post_container .post_footer  h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.Input_container{
+    width: 350px;
+}
+.Input_container .form .image_path input:nth-child(1){
+    width: 71%;
+}
+.Input_container .form .image_path input:nth-child(2){
+    width: 29%;
+}
+
+}
